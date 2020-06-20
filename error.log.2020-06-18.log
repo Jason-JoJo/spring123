@@ -1,0 +1,322 @@
+2020-06-18 17:23:55,285 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 28096 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-18 17:23:55,288 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-18 17:23:56,317 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:23:56,332 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 17:23:56,396 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 55ms. Found 1 JPA repository interfaces.
+2020-06-18 17:23:57,323 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-18 17:23:57,323 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:23:57,323 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-18 17:23:57,323 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-18 17:23:57,448 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-18 17:23:57,448 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 2117 ms
+2020-06-18 17:23:57,792 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:23:57,808 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-18 17:23:58,292 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-18 17:23:58,323 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 17:23:58,386 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-18 17:23:58,386 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-18 17:23:58,714 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 17:23:58,807 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-18 17:23:58,952 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-06-18 17:23:58,953 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:23:58,972 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 17:23:59,597 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 17:23:59,613 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:23:59,613 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:23:59,613 [main] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2020-06-18 17:23:59,613 [main] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2020-06-18 17:23:59,613 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2020-06-18 17:23:59,629 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-18 17:23:59,754 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisConnectionFactory' in 'JedisConnectionConfiguration' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' in 'LettuceConnectionConfiguration' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2020-06-18 17:24:14,187 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 980 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-18 17:24:14,187 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-18 17:24:15,499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:24:15,515 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 17:24:15,640 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 110ms. Found 1 JPA repository interfaces.
+2020-06-18 17:24:17,164 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-18 17:24:17,179 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:24:17,179 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-18 17:24:17,179 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-18 17:24:17,414 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-18 17:24:17,414 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 3149 ms
+2020-06-18 17:24:18,226 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:24:18,242 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-18 17:24:19,195 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-18 17:24:19,273 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 17:24:19,413 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-18 17:24:19,413 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-18 17:24:19,782 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 17:24:19,907 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-18 17:24:20,110 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2020-06-18 17:24:20,110 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:24:20,145 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 17:24:21,361 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 17:24:21,393 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:24:21,393 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:24:21,393 [main] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2020-06-18 17:24:21,408 [main] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2020-06-18 17:24:21,408 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2020-06-18 17:24:21,439 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-18 17:24:21,646 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'redisConnectionFactory' in 'JedisConnectionConfiguration' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' in 'LettuceConnectionConfiguration' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2020-06-18 17:28:24,042 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 22316 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-18 17:28:24,042 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-18 17:28:25,651 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:28:25,651 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 17:28:25,948 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 276ms. Found 1 JPA repository interfaces.
+2020-06-18 17:28:25,964 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:28:25,964 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-18 17:28:25,995 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-18 17:28:25,995 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-06-18 17:28:27,304 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-18 17:28:27,320 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:28:27,320 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-18 17:28:27,320 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-18 17:28:27,491 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-18 17:28:27,491 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 3370 ms
+2020-06-18 17:28:27,569 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter 61 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'sessionRepositoryFilterRegistration' defined in class path resource [org/springframework/boot/autoconfigure/session/SessionRepositoryFilterConfiguration.class]: Unsatisfied dependency expressed through method 'sessionRepositoryFilterRegistration' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties': Could not bind properties to 'RedisProperties' : prefix=spring.redis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.redis.timeout' to java.time.Duration
+2020-06-18 17:28:27,710 [main] INFO  o.a.catalina.core.StandardService 173 - Stopping service [Tomcat]
+2020-06-18 17:28:27,835 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 559 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-06-18 17:28:27,851 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-18 17:28:27,851 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.redis.timeout' to java.time.Duration:
+
+    Property: spring.redis.timeout
+    Value: 0  
+    Origin: class path resource [application.properties]:32:22
+    Reason: failed to convert java.lang.String to java.time.Duration
+
+Action:
+
+Update your application's configuration
+
+2020-06-18 17:28:57,840 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 28804 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-18 17:28:57,840 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-18 17:28:58,746 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:28:58,746 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 17:28:58,933 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 175ms. Found 1 JPA repository interfaces.
+2020-06-18 17:28:58,949 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:28:58,949 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-18 17:28:58,965 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-18 17:28:58,965 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2020-06-18 17:29:00,089 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-18 17:29:00,089 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:29:00,089 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-18 17:29:00,089 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-18 17:29:00,245 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-18 17:29:00,245 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 2374 ms
+2020-06-18 17:29:01,027 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:29:01,027 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-18 17:29:01,667 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-18 17:29:01,730 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 17:29:01,808 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-18 17:29:01,823 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-18 17:29:02,104 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 17:29:02,214 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-18 17:29:02,401 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 17:29:04,026 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 17:29:04,073 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:29:04,494 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:29:04,526 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-18 17:29:05,151 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-18 17:29:05,557 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-18 17:29:05,572 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-18 17:29:05,572 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 8.063 seconds (JVM running for 8.631)
+2020-06-18 17:29:40,958 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-18 17:29:40,959 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-18 17:29:40,964 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 5 ms
+2020-06-18 17:29:41,002 [http-nio-8082-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-18 17:30:03,358 [http-nio-8082-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-18 17:30:50,914 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 19112 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-18 17:30:50,914 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-18 17:30:51,648 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:30:51,648 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 17:30:51,805 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 157ms. Found 1 JPA repository interfaces.
+2020-06-18 17:30:51,820 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:30:51,820 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-18 17:30:51,836 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-18 17:30:51,836 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2020-06-18 17:30:52,586 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-18 17:30:52,601 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:30:52,601 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-18 17:30:52,601 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-18 17:30:52,711 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-18 17:30:52,711 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 1750 ms
+2020-06-18 17:30:53,242 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:30:53,257 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-18 17:30:53,820 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-18 17:30:53,867 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 17:30:53,929 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-18 17:30:53,929 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-18 17:30:54,085 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 17:30:54,132 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-18 17:30:54,257 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 17:30:55,116 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 17:30:55,132 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:30:55,335 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:30:55,351 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-18 17:30:55,960 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-18 17:30:56,210 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-18 17:30:56,210 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-18 17:30:56,225 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 5.589 seconds (JVM running for 6.091)
+2020-06-18 17:31:11,236 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-18 17:31:11,237 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-18 17:31:11,244 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 7 ms
+2020-06-18 17:31:20,581 [http-nio-8082-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-18 17:31:30,743 [http-nio-8082-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-18 17:32:21,692 [lettuce-nioEventLoop-4-1] INFO  i.l.core.protocol.CommandHandler 217 - null Unexpected exception during request: java.io.IOException: 遠端主機已強制關閉一個現存的連線。
+java.io.IOException: 遠端主機已強制關閉一個現存的連線。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-18 17:32:21,692 [lettuce-nioEventLoop-4-2] INFO  i.l.core.protocol.CommandHandler 217 - null Unexpected exception during request: java.io.IOException: 遠端主機已強制關閉一個現存的連線。
+java.io.IOException: 遠端主機已強制關閉一個現存的連線。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-18 17:32:21,801 [lettuce-eventExecutorLoop-1-1] INFO  i.l.core.protocol.ConnectionWatchdog 171 - Reconnecting, last destination was localhost/127.0.0.1:6379
+2020-06-18 17:32:21,801 [lettuce-eventExecutorLoop-1-2] INFO  i.l.core.protocol.ConnectionWatchdog 171 - Reconnecting, last destination was localhost/127.0.0.1:6379
+2020-06-18 17:32:23,864 [lettuce-nioEventLoop-4-4] WARN  i.l.core.protocol.ConnectionWatchdog 151 - Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2020-06-18 17:32:23,864 [lettuce-nioEventLoop-4-3] WARN  i.l.core.protocol.ConnectionWatchdog 151 - Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2020-06-18 17:32:24,417 [lettuce-nioEventLoop-4-6] INFO  i.l.c.protocol.ReconnectionHandler 188 - Reconnected to localhost:6379
+2020-06-18 17:32:24,417 [lettuce-nioEventLoop-4-5] INFO  i.l.c.protocol.ReconnectionHandler 188 - Reconnected to localhost:6379
+2020-06-18 17:33:39,266 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 29140 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-18 17:33:39,282 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-18 17:33:40,001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:33:40,001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 17:33:40,141 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 138ms. Found 1 JPA repository interfaces.
+2020-06-18 17:33:40,157 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:33:40,157 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-18 17:33:40,172 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-18 17:33:40,172 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2020-06-18 17:33:40,922 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-18 17:33:40,938 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:33:40,938 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-18 17:33:40,938 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-18 17:33:41,032 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-18 17:33:41,032 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 1719 ms
+2020-06-18 17:33:41,672 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:33:41,688 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-18 17:33:42,125 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-18 17:33:42,172 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 17:33:42,219 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-18 17:33:42,219 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-18 17:33:42,391 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 17:33:42,437 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-18 17:33:42,562 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 17:33:43,328 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 17:33:43,344 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:33:43,422 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:33:43,437 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-18 17:33:44,002 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-18 17:33:44,270 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-18 17:33:44,280 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-18 17:33:44,288 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 5.298 seconds (JVM running for 5.795)
+2020-06-18 17:35:14,045 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 25072 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-18 17:35:14,045 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-18 17:35:14,795 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:35:14,795 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 17:35:14,936 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 131ms. Found 1 JPA repository interfaces.
+2020-06-18 17:35:14,951 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-18 17:35:14,951 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-18 17:35:14,967 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-18 17:35:14,967 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2020-06-18 17:35:15,842 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-18 17:35:15,857 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:35:15,857 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-18 17:35:15,857 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-18 17:35:15,982 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-18 17:35:15,982 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 1906 ms
+2020-06-18 17:35:16,621 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 17:35:16,632 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-18 17:35:17,085 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-18 17:35:17,132 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-18 17:35:17,194 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-18 17:35:17,210 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-18 17:35:17,397 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 17:35:17,444 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-18 17:35:17,585 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-18 17:35:18,447 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 17:35:18,447 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 17:35:18,731 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-18 17:35:18,747 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-18 17:35:19,372 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-18 17:35:19,749 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-18 17:35:19,764 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-18 17:35:19,764 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 6.024 seconds (JVM running for 6.535)

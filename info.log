@@ -1,0 +1,631 @@
+2020-06-19 09:22:13,048 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 5684 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:22:13,060 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:22:14,302 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:22:14,307 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:22:14,642 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 309ms. Found 1 JPA repository interfaces.
+2020-06-19 09:22:14,670 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:22:14,671 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:22:14,695 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:22:14,696 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-06-19 09:22:15,942 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:22:15,959 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:22:15,960 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:22:15,960 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:22:16,153 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:22:16,154 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 3007 ms
+2020-06-19 09:22:17,287 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:22:17,302 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:22:18,095 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:22:18,174 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:22:18,279 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:22:18,304 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:22:18,600 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:22:18,608 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:22:18,885 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:22:20,233 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:22:20,258 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:22:20,294 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:22:20,308 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:22:20,859 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:22:21,326 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:22:21,342 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:22:21,353 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 8.926 seconds (JVM running for 9.882)
+2020-06-19 09:22:33,389 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:22:33,390 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:22:33,404 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 14 ms
+2020-06-19 09:36:17,877 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 14968 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:36:17,881 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:36:19,791 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:36:19,794 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:36:20,303 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 487ms. Found 1 JPA repository interfaces.
+2020-06-19 09:36:20,353 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:36:20,357 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:36:20,398 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:36:20,398 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-06-19 09:36:22,801 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:36:22,831 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:36:22,832 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:36:22,833 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:36:23,133 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:36:23,134 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 5183 ms
+2020-06-19 09:36:24,817 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:36:24,838 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:36:26,427 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:36:26,590 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:36:26,777 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:36:26,779 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:36:27,095 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:36:27,241 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:36:27,515 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:36:29,484 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:36:29,502 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:36:30,133 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:36:30,202 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:36:30,395 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:36:30,396 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:36:30,415 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 19 ms
+2020-06-19 09:36:30,799 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:36:31,573 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:36:31,613 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:36:31,641 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 14.246 seconds (JVM running for 15.087)
+2020-06-19 09:36:58,578 [http-nio-8082-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-19 09:37:33,807 [http-nio-8082-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-19 09:38:12,157 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 11328 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:38:12,162 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:38:13,295 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:38:13,300 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:38:13,638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 314ms. Found 1 JPA repository interfaces.
+2020-06-19 09:38:13,659 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:38:13,662 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:38:13,692 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:38:13,692 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-06-19 09:38:15,103 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:38:15,117 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:38:15,118 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:38:15,119 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:38:15,397 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:38:15,398 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 3175 ms
+2020-06-19 09:38:16,374 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:38:16,391 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:38:17,330 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:38:17,461 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:38:17,626 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:38:17,627 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:38:17,986 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:38:18,077 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:38:18,376 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:38:19,876 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:38:19,908 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:38:20,330 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:38:20,375 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:38:20,943 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:38:21,889 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:38:21,918 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:38:21,940 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 10.303 seconds (JVM running for 11.864)
+2020-06-19 09:38:24,356 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:38:24,357 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:38:24,377 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 20 ms
+2020-06-19 09:38:39,018 [http-nio-8082-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-19 09:40:08,054 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:40:08,056 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:40:08,057 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2020-06-19 09:40:08,069 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
+2020-06-19 09:40:40,768 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 9100 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:40:40,772 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:40:41,801 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:40:41,804 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:40:42,084 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 262ms. Found 1 JPA repository interfaces.
+2020-06-19 09:40:42,111 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:40:42,113 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:40:42,136 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:40:42,136 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-06-19 09:40:43,255 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:40:43,270 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:40:43,271 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:40:43,271 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:40:43,411 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:40:43,411 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 2577 ms
+2020-06-19 09:40:44,468 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:40:44,481 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:40:45,237 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:40:45,333 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:40:45,467 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:40:45,475 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:40:45,764 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:40:45,870 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:40:46,056 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:40:47,661 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:40:47,691 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:40:48,368 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:40:48,406 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:40:48,993 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:40:49,768 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:40:49,795 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:40:49,812 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 9.502 seconds (JVM running for 10.272)
+2020-06-19 09:40:55,220 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:40:55,220 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:40:55,239 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 18 ms
+2020-06-19 09:41:03,677 [http-nio-8082-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-19 09:41:43,923 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 18320 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:41:43,928 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:41:45,022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:41:45,027 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:41:45,299 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 249ms. Found 1 JPA repository interfaces.
+2020-06-19 09:41:45,317 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:41:45,319 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:41:45,336 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:41:45,337 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2020-06-19 09:41:46,618 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:41:46,633 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:41:46,633 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:41:46,634 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:41:46,803 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:41:46,803 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 2810 ms
+2020-06-19 09:41:47,792 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:41:47,805 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:41:48,567 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:41:48,630 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:41:48,735 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:41:48,740 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:41:49,021 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:41:49,103 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:41:49,269 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:41:50,438 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:41:50,450 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:41:50,806 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:41:50,831 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:41:51,429 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:41:51,929 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:41:51,952 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:41:51,966 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 8.484 seconds (JVM running for 9.266)
+2020-06-19 09:42:00,128 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:42:00,128 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:42:00,147 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 17 ms
+2020-06-19 09:45:23,249 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 11908 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:45:23,252 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:45:24,664 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:45:24,667 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:45:24,900 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 218ms. Found 1 JPA repository interfaces.
+2020-06-19 09:45:24,925 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:45:24,928 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:45:24,950 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:45:24,950 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-06-19 09:45:26,158 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:45:26,172 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:45:26,173 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:45:26,174 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:45:26,342 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:45:26,342 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 3029 ms
+2020-06-19 09:45:27,325 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:45:27,336 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:45:28,108 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:45:28,188 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:45:28,305 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:45:28,308 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:45:28,607 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:45:28,692 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:45:28,914 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:45:31,093 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:45:31,120 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:45:31,764 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:45:31,796 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:45:32,367 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:45:32,638 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:45:32,638 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:45:33,174 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:45:33,185 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 546 ms
+2020-06-19 09:45:33,201 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:45:33,219 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 10.397 seconds (JVM running for 11.159)
+2020-06-19 09:48:18,950 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 8512 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:48:18,955 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:48:20,191 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:48:20,195 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:48:20,507 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 286ms. Found 1 JPA repository interfaces.
+2020-06-19 09:48:20,532 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:48:20,535 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:48:20,561 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:48:20,562 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-06-19 09:48:22,847 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:48:22,878 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:48:22,880 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:48:22,881 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:48:23,256 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:48:23,256 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 4236 ms
+2020-06-19 09:48:25,493 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:48:25,516 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:48:26,900 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:48:27,059 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:48:27,222 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:48:27,231 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:48:27,590 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:48:27,702 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:48:27,994 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:48:30,083 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:48:30,107 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:48:30,770 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:48:30,807 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:48:31,130 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:48:31,130 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:48:31,146 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 15 ms
+2020-06-19 09:48:31,389 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:48:32,023 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:48:32,050 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:48:32,071 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 13.615 seconds (JVM running for 14.607)
+2020-06-19 09:48:51,878 [http-nio-8082-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-19 09:50:57,174 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 3524 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:50:57,177 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:50:58,429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:50:58,432 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:50:58,804 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 351ms. Found 1 JPA repository interfaces.
+2020-06-19 09:50:58,832 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:50:58,834 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:50:58,860 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:50:58,860 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-06-19 09:51:00,044 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:51:00,058 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:51:00,059 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:51:00,060 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:51:00,231 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:51:00,231 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 2996 ms
+2020-06-19 09:51:01,281 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:51:01,302 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:51:02,085 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:51:02,156 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:51:02,255 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:51:02,259 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:51:02,533 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:51:02,628 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:51:02,797 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:51:03,995 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:51:04,011 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:51:04,380 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:51:04,406 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:51:04,997 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:51:05,518 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:51:05,529 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:51:05,538 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 8.787 seconds (JVM running for 9.615)
+2020-06-19 09:51:56,495 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 20212 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:51:56,498 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:51:57,734 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:51:57,739 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:51:58,060 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 296ms. Found 1 JPA repository interfaces.
+2020-06-19 09:51:58,084 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:51:58,086 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:51:58,107 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:51:58,108 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-06-19 09:51:59,410 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:51:59,424 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:51:59,425 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:51:59,425 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:51:59,562 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:51:59,563 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 3006 ms
+2020-06-19 09:52:00,903 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:52:00,930 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:52:02,554 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:52:02,692 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:52:02,875 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:52:02,892 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:52:03,285 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:52:03,437 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:52:03,722 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:52:05,867 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:52:05,893 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:52:06,706 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:52:06,771 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:52:06,955 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:52:06,955 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:52:06,971 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 15 ms
+2020-06-19 09:52:07,173 [http-nio-8082-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver 199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-06-19 09:52:07,341 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:52:07,893 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:52:07,921 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:52:07,939 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 11.855 seconds (JVM running for 12.615)
+2020-06-19 09:52:21,195 [http-nio-8082-exec-1] ERROR org.thymeleaf.TemplateEngine 1136 - [THYMELEAF][http-nio-8082-exec-1] Exception processing template "login": Error during execution of processor 'org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor' (template: "login" - line 48, col 93)
+org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor' (template: "login" - line 48, col 93)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'MemberAccountJPA' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 56 common frames omitted
+2020-06-19 09:52:21,221 [http-nio-8082-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] 175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor' (template: "login" - line 48, col 93)] with root cause
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'MemberAccountJPA' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-19 09:52:55,778 [main] INFO  com.spring30.IthomeApplication 55 - Starting IthomeApplication on JASON-DELL with PID 11060 (D:\IDEA_workspace\Ithome_Spring30\target\classes started by jason in D:\IDEA_workspace\Ithome_Spring30)
+2020-06-19 09:52:55,783 [main] INFO  com.spring30.IthomeApplication 655 - The following profiles are active: test
+2020-06-19 09:52:57,116 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:52:57,119 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-19 09:52:57,370 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 240ms. Found 1 JPA repository interfaces.
+2020-06-19 09:52:57,398 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-19 09:52:57,401 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-19 09:52:57,421 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport 348 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.spring30.dao.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-19 09:52:57,421 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate 187 - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-06-19 09:52:59,014 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 108 - Tomcat initialized with port(s): 8082 (http)
+2020-06-19 09:52:59,031 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:52:59,031 [main] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2020-06-19 09:52:59,032 [main] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-06-19 09:52:59,352 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2020-06-19 09:52:59,352 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext 285 - Root WebApplicationContext: initialization completed in 3486 ms
+2020-06-19 09:53:00,395 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor 181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:53:00,411 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2020-06-19 09:53:01,344 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2020-06-19 09:53:01,484 [task-1] INFO  o.h.jpa.internal.util.LogHelper 31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-19 09:53:01,611 [task-1] INFO  org.hibernate.Version 44 - HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-19 09:53:01,620 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration 220 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-19 09:53:01,974 [task-1] INFO  o.h.annotations.common.Version 49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-19 09:53:02,062 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping 58 - Adding welcome page template: index
+2020-06-19 09:53:02,269 [task-1] INFO  org.hibernate.dialect.Dialect 172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-06-19 09:53:03,906 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator 52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-19 09:53:03,924 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:53:04,168 [main] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8082"]
+2020-06-19 09:53:04,196 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer 220 - Tomcat started on port(s): 8082 (http) with context path ''
+2020-06-19 09:53:04,710 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 49 - Triggering deferred initialization of Spring Data repositories…
+2020-06-19 09:53:05,351 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener 53 - Spring Data repositories initialized!
+2020-06-19 09:53:05,386 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor 297 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-06-19 09:53:05,404 [main] INFO  com.spring30.IthomeApplication 61 - Started IthomeApplication in 10.227 seconds (JVM running for 11.37)
+2020-06-19 09:53:19,211 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-19 09:53:19,211 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 525 - Initializing Servlet 'dispatcherServlet'
+2020-06-19 09:53:19,230 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet 547 - Completed initialization in 18 ms
+2020-06-19 09:53:22,116 [http-nio-8082-exec-10] ERROR org.thymeleaf.TemplateEngine 1136 - [THYMELEAF][http-nio-8082-exec-10] Exception processing template "login": Error during execution of processor 'org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor' (template: "login" - line 48, col 93)
+org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor' (template: "login" - line 48, col 93)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'MemberAccountJPA' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 56 common frames omitted
+2020-06-19 09:53:22,132 [http-nio-8082-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] 175 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor' (template: "login" - line 48, col 93)] with root cause
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'MemberAccountJPA' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-19 09:58:28,932 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean 598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-19 09:58:28,934 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor 218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-19 09:58:28,936 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2020-06-19 09:58:28,948 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.
