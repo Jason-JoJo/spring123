@@ -19,8 +19,33 @@
     <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
 
     <script type="text/javascript" src="../js/main.js"></script>
+
+    <!--preview script-->
     <script>
-        console.log("Test console.log");
+            function readURL(input){
+              if(input.files && input.files[0]){
+                var imageTagID = input.getAttribute("targetID");
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                   var img = document.getElementById(imageTagID);
+                   img.setAttribute("src", e.target.result)
+                }
+                reader.readAsDataURL(input.files[0]);
+               document.getElementById("picpre").style.display = '';
+              }
+            }
+    </script>
+    <script>
+        function myFunction() {
+          document.getElementById("preview_img").setAttribute("src", "");
+          document.getElementById("picpre").style.display = 'none';
+        }
+    </script>
+    <!-- no pic display none-->
+    <script>
+        function displayFunction() {
+          document.getElementById("picpre").style.display = 'none';
+        }
     </script>
 </head>
 <body>
@@ -28,15 +53,19 @@
 <h1>Spring Boot - Multiple file upload example</h1>
 
 <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
-<!--    <input type="text" name="extraField"/><br/><br/>-->
-    <input type="file" name="files"/><br/>
-    <pre>
-    <span id="result"></span>
+
+    <input type="file" name="files" onchange="readURL(this)" targetID="preview_img" accept="image/gif, image/jpeg, image/png"/><br/>
+    <pre id="picpre">
+        <img id="preview_img" src="#"  width="300" height="225" alt="preview"/>
     </pre>
-    <input type="submit" value="Submit" id="btnSubmit"/>
+    <pre>
+        <span id="result"></span>
+    </pre>
+
+    <input type="submit" value="Submit" id="btnSubmit" onclick="myFunction()"/>
+<!--    <input type="button" onclick="displayFunction()" value="clear">-->
 </form>
 </div>
-
 
 
 <!-- /#wrapper -->
