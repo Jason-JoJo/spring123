@@ -3,17 +3,25 @@ package com.spring30.model;
 
 import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
+
 @Component
+@Entity
+@Table(name = "member_account")
 public class MemberAccount {
 
-    private int id;
+    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String email;
     private String cellphone;
     private String password;
     private String address;
 
+    public MemberAccount() {
+    }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

@@ -37,16 +37,17 @@
     </script>
     <script>
         function myFunction() {
-          document.getElementById("preview_img").setAttribute("src", "");
-          document.getElementById("picpre").style.display = 'none';
+          document.getElementById("preview_img").setAttribute("src", "../pic/upload.png");
+
         }
     </script>
     <!-- no pic display none-->
-    <script>
-        function displayFunction() {
-          document.getElementById("picpre").style.display = 'none';
-        }
-    </script>
+<!--    <script>-->
+<!--        function displayFunction() {-->
+<!--          document.getElementById("picpre").style.display = 'none';-->
+<!--        }-->
+<!--    </script>-->
+    <!--          document.getElementById("file").style.display = 'none';-->
 </head>
 <body>
 <div class="container">
@@ -54,16 +55,21 @@
 
 <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
 
-    <input type="file" name="files" onchange="readURL(this)" targetID="preview_img" accept="image/gif, image/jpeg, image/png"/><br/>
+    <input type="file" id="file" name="files" onchange="readURL(this)" targetID="preview_img" accept="image/gif, image/jpeg, image/png"/><br/>
     <pre id="picpre">
-        <img id="preview_img" src="#"  width="300" height="225" alt="preview"/>
+        <img id="preview_img" src="#"  width="20%" height="20%" alt="preview" onerror="this.src='../pic/upload.png';this.onerror=null"/>
     </pre>
     <pre>
         <span id="result"></span>
     </pre>
 
-    <input type="submit" value="Submit" id="btnSubmit" onclick="myFunction()"/>
+    <input type="submit" value="Submit" id="btnSubmit" onclick="myFunction()"/><br>
 <!--    <input type="button" onclick="displayFunction()" value="clear">-->
+<!--    <img src="../pic/upload.png" width="10%" height="10%"><br>-->
+<!--    <img src="/pic/upload.png" width="10%" height="10%"><br>-->
+<!--    <img src="../pic/upload.png" width="10%" height="10%"><br>-->
+<!--    <img src="/resources/pic/upload.png" width="10%" height="10%"><br>-->
+<!--    <img src="/resources/pic/upload.png" width="10%" height="10%"><br>-->
 </form>
 </div>
 

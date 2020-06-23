@@ -15,7 +15,15 @@
 
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <script>
+    $(document).ready(function() {
+    var $submit = $('input[type="submit"]');
+    $submit.prop('disabled', true);
+    $('input[type="text"]').on('input change', function() {
+        $submit.prop('disabled', !$(this).val().length);
+    });
+});
+    </script>
 </head>
 <body>
 <div class="container">
@@ -28,11 +36,15 @@
     <a href="http://localhost:8082/login/">Login</a>
 </div>
 
-    <div class="panel-body"><input type="button" value="this is button"></div>
+
     <div class="panel-body"><a  href="http://localhost:8082/upload/" class="btn btn-primary">Upload</a></div>
 </div>
 
+<div class="container">
+    <div>Text<input type="text" ></div>
+    <div class="panel-body"><input type="submit" value="this is submit" id= "submitBtn" ></div>
 
+</div>
 
 
 
